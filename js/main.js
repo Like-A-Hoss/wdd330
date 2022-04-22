@@ -5,7 +5,9 @@ const links = [
         url: "week1/index.html"
     }
 ];
+let message = " ";
 for (text in links){
-    var message = "<li><a href='" + text.url + "'>"+ text.label +"</a></li>" ;
-    document.get
+    let link = `<li><a href='${links[text].url}'>${links[text].label}</a></li>` ;
+    message += link;
 }
+document.getElementById('navList').innerHTML = message;
