@@ -1,0 +1,55 @@
+<!doctype html>
+<!--Code by Nathan Hoskins.  Excorise from Doing stuff with Web Things-->
+<html>
+<head>
+  <title>Story Editor</title>
+  <script>
+    function loadStory(){
+    var storyName = document.getElementById('title').value;
+    var storyHTML = localStorage.getItem(storyName);
+    document.getElementById('story_editor').value = storyHTML;
+    }
+
+    function saveStory(){
+        var storyName = document.getElementById('title').value;
+        var storyHTML = document.getElementById('story_editor').value;
+        localStorage.setItem(storyName, storyHTML);
+    }
+
+    function displayStory(){
+        var storyHTML = document.getElementById('story_editor').value
+        document.getElementById('story_display').innerHTML = storyHTML
+    }
+  </script>
+
+  <style>
+      textarea{
+          width: 75%;
+          height: 500px;
+          background-color: lightyellow;
+          font: Arial;
+      }
+      h1{
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      label{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+  </style>
+</head>
+
+<body>
+    <h1>Story Editor</h1>
+	<p><label>Story Name: </label><input type="text" name="#title" id="title"></p>
+    <section>
+        <button id="find_edit" onclick="loadStory()">Find and Edit It</button>
+        <button id="save" onclick="saveStory()">Save It</button>
+        <button id="display" onclick="displayStory()">Display It</button>
+    </section>
+    <div id="text_editor">
+        <textarea id="story_editor" wrap="hard" placeholder="write your totally awesome and original sotry here."></textarea>
+    </div>
+    <section id="story_display"></section>
+</body>
+</html>
