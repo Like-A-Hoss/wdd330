@@ -7,10 +7,6 @@ const links = [
     {
         label: "Week2 Notes",
         url: "week2/index.html"
-    },
-    {
-        label: "Week1 Notes",
-        url: "week1/index.html"
     }
 ];
 let message = " ";
