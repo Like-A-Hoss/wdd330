@@ -15,4 +15,5 @@ function hero_quiz(){
             alert('Worg!  The correct answer was ' + answer);
         }
     }
+    alert('Game Over, your score was ' + score +'point(s)');
 }
