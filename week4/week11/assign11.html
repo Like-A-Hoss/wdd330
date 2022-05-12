@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Orders</title>
+    <link rel="stylesheet" type="text/css" href="../StyleSheet.css" />
+    <style ></style>
+    <script >
+        var total1 = 0;
+        var total2 = 0;
+        var total3 = 0;
+        var total4 = 0;
+        var total5 = 0;
+        var total6 = 0;
+        var total7 = 0;
+        var total8 = 0;
+        var total9 = 0;
+        var total10 = 0;
+        var total11 = 0;
+        var total12 = 0;
+
+        function inventory() {
+            //fills in inventory numbers.  If this were a real e-commerce site It would need to read the inventory database.  Since setting that up so far outside the scope of this project I will skip that and just generate my variables with 4d6
+            let product1Inv = "10";
+            let product2Inv = "7";
+            let product3Inv = "12";
+            let product4Inv = "17";
+            let product5Inv = "19";
+            let product6Inv = "15";
+            let product7Inv = "14";
+            let product8Inv = "13";
+            let product9Inv = "14";
+            let product10Inv = "11";
+            let product11Inv = "7";
+            let product12Inv = "5";
+            document.getElementById('Product1inv').innerHTML = product1Inv + " left";
+            document.getElementById('Product2inv').innerHTML = product2Inv + " left";
+            document.getElementById('Product3inv').innerHTML = product3Inv + " left";
+            document.getElementById('Product4inv').innerHTML = product4Inv + " left";
+            document.getElementById('Product5inv').innerHTML = product5Inv + " left";
+            document.getElementById('Product6inv').innerHTML = product6Inv + " left";
+            document.getElementById('Product7inv').innerHTML = product7Inv + " left";
+            document.getElementById('Product8inv').innerHTML = product8Inv + " left";
+            document.getElementById('Product9inv').innerHTML = product9Inv + " left";
+            document.getElementById('Product10inv').innerHTML = product10Inv + " left";
+            document.getElementById('Product11inv').innerHTML = product11Inv + " left";
+            document.getElementById('Product12inv').innerHTML = product12Inv + " left";
+
+
+        }
+
+        function price1() {
+            let price = 19.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product1qty').value);
+            total1 = price * qty;
+            let message = "$" + total1.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total1').innerHTML = message;
+        }
+        function price2() {
+            let price = 24.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product2qty').value);
+            total2 = price * qty;
+            let message = "$" + total2.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total2').innerHTML = message;
+        }
+        function price3() {
+            let price = 54.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product3qty').value);
+            total3 = price * qty;
+            let message = "$" + total3.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total3').innerHTML = message;
+        }
+        function price4() {
+            let price = 33.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product4qty').value);
+            total4 = price * qty;
+            let message = "$" + total4.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total4').innerHTML = message;
+        }
+        function price5() {
+            let price = 79.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product5qty').value);
+            total5 = price * qty;
+            let message = "$" + total5.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total5').innerHTML = message;
+        }
+        function price6() {
+            let price = 44.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product6qty').value);
+            
+                total6 = price * qty;
+            let message = "$" + total6.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total6').innerHTML = message;
+        }
+        function price7() {
+            let price = 29.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product7qty').value);
+            
+                total7 = price * qty;
+            let message = "$" + total7.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total7').innerHTML = message;
+        }
+        function price8() {
+            let price = 19.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product8qty').value);
+            
+                total8 = price * qty;
+            let message = "$" + total8.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total8').innerHTML = message;
+        }
+        function price9() {
+            let price = 19.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product9qty').value);
+            
+                total9 = price * qty;
+            let message = "$" + total9.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total9').innerHTML = message;
+        }
+        function price10() {
+            let price = 29.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product10qty').value);
+            
+                total10 = price * qty;
+            let message = "$" + total10.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total10').innerHTML = message;
+        }
+        function price11() {
+            let price = 29.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product11qty').value);
+            
+                total11 = price * qty;
+            let message = "$" + total11.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total11').innerHTML = message;
+        }
+        function price12() {
+            let price = 5.99; //again this would normally be loaded in from a database but setting those up is will outside the scope of this project
+            let qty = parseInt(document.getElementById('Product12qty').value);
+            
+                total12 = price * qty;
+            let message = "$" + total12.toFixed(2);
+            message = message.fontcolor("red");
+            document.getElementById('total12').innerHTML = message;
+        }
+        function subtotal() {
+            let sub = total1 + total2 + total3 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12;
+            let shipping = 7.95;
+            let sub2 = sub + shipping;
+            let tax = sub * 0.051;
+            let total = sub2 + tax;
+            document.getElementById('subTotal').innerHTML = sub.toFixed(2);
+            document.getElementById('tax').innerHTML = tax.toFixed(2);
+            document.getElementById('shipping').innerHTML = shipping.toFixed(2);
+            document.getElementById('total').innerHTML = total.toFixed(2);
+            document.getElementById('postTotal').innerHTML = "<label for='firstName'>First Name:</label><input type='text' id='firstName'  /><label for='lastName'>Last Name:</label><input type='text' id='lastName' /><br /><label for='phone'>Phone Number:</label><input type='tel' id='phone' /><br /><label for='address'>Address</label><textarea id='address'></textarea><label for= 'cc' > Creditcard Number</label > <input type='number' id='cc' size='16' onblur='ccCheck()'/><div id='ccIcon'></div><label>Experation Date</label><input type='number' min='1' max='12' id='month' value='1' /><input type='number' min='2021' max='2024' value='2021' /> <br /><button type='button' name='process' onclick='process()'>submit</button>";
+        }
+        
+        
+            
+        }
+    </script>
+
+</head>
+<body onload="inventory()">
+    <header>
+        Place your order here
+    </header>
+    <nav>
+        
+        <p>Assignments</p>
+        <ul style="text-align: center; list-style-position: inside;">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../week02/assign02.html">Week 02</a></li>
+            <li><a href="../week03/assign03.html">Week 03</a></li>
+            <li><a href="../week04/assign04.html">Week 04</a></li>
+            <li><a href="../week05/assign05.html">Week 05</a></li>
+            <li><a href="../week06/assign06.html">Week 06</a></li>
+            <li><a href="../week07/assign07.html">Week 07</a></li>
+            <li><a href="../week08/assign08.html">Week 08</a></li>
+            <li><a href="../week09/assign09.html">Week 09</a></li>
+            <li><a href="../week10/assign10.html">Week 10</a></li>
+            <li><a href="../week11/assign11.html">Week 11</a></li>
+            <li><a href="../week12/assign12.html">Week 12</a></li>
+            <li><a href="../week13/assign13.html">Week 13</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Your table deserves some good terrain</h1>
+        <p>You spend hours painting your minatures so why not have a battlefield just evocative?  With our resin terrain avaible in pre painted,  
+        custom painted, and unpainted for the Do it yourselfer we can bring your battles to life.</p>
+        <p>
+            Just fill out the order form below and our expert elves will get to work on your order.
+        </p>
+        <form name="terrainForm" action="assign11.php" method="get" >
+            <table>
+                <tr>
+                <td id="product1"><img src="HillB.jpg" alt="craggy hill"/><br /><p>Hill B</p><label id="Product1inv"></label><p>$19.99</p><input type="number" id="Product1qty" name="Product1qty" value="0" onblur="price1()"/><br /><label id="total1"></label></td>
+                <td id="product2"><img src="Magicwell.jpg" alt="knock off moonwell" /><br /><p>Magic Well</p><p>$24.99</p><p id="Product2inv"></p><input type="number" id="Product2qty" name="Product2qty" value="0" onblur="price2()" /><br /><label id="total2"></label></td>
+                <td id="product3"><img src="GothicSpaceChurch.jpg" alt="Warhammer 40k church" /><br /><p>Gothic Space Church</p><p>$54.99</p><p id="Product3inv"></p><input type="number" id="Product3qty" value="0" name="Product3qty" onblur="price3()" /><br /><label id="total3"></label></td>
+                </tr>
+                <tr>
+                    <td id="product4"><img src="GothicSpaceElectricAlter.png" alt="Tech Priest Alter" /><br /><p>Gothic Space Electric Alter</p><label id="Product4inv"></label><p>$33.99</p><input type="number" id="Product4qty" value="0" name="Product4qty" onblur="price4()" /><br /><label id="total4"></label></td>
+                    <td id="product5"><img src="GothicSpaceTemple.jpg" alt="Praise the Emperor" /><br /><p>Gothic Space Temple</p><label id="Product5inv"></label><p>$79.99</p><input type="number" id="Product5qty" name="Product5qty" value="0" onblur="price5()" /><br /><label id="total5"></label></td>
+                    <td id="product6"><img src="GothicSpaceWalls.jpg" alt="Random 40k walls" /><br /><p>Gothic Space Wallls</p><label id="Product6inv"></label><p>$44.99</p><input type="number" id="Product6qty" name="Product6qty" value="0" onblur="price6()" /><br /><label id="total6"></label></td>
+                </tr>
+                <tr>
+                    <td id="product7"><img src="templewall.jpg" alt="fantasy temple wall" /><br /><p>Temple Wall</p><label id="Product7inv"></label><p>$29.99</p><input type="number" id="Product7qty" name="Product7qty" value="0" onblur="price7()" /><br /><label id="total7"></label></td>
+                    <td id="product8"><img src="ArchWall.jpg" alt="generic arched wall" /><br /><p>Arch Wall Right</p><label id="Product8inv"></label><p>$19.99</p><input type="number" id="Product8qty" name="Product8qty" value="0" onblur="price8()" /><br /><label id="total8"></label></td>
+                    <td id="product9"><img src="ArchwallLeft.jpg" alt="random arched wall" /><br /><p>Arch Wall Left</p><label id="Product9inv"></label><p>$19.99</p><input type="number" id="Product9qty" name="Product9qty" value="0" onblur="price9()" /><br /><label id="total9"></label></td>
+                </tr>
+                <tr>
+                    <td id="product10"><img src="cleanSpaceAppartments.png" alt="nice look hab block" /><br /><p>Space Appartments</p><label id="Product10inv"></label><p>$29.99</p><input type="number" id="Product10qty" value="0" name="Product10qty" onblur="price10()" /><br /><label id="total10"></label></td>
+                    <td id="product11"><img src="CleanSpaceBuildings.png" alt="nice look space buildings" /><br /><p>Science Fiction Buildings</p><label id="Product11inv"></label><p>$29.99</p><input type="number" id="Product11qty" value="0" name="Product11qty" onblur="price11()" /><br /><label id="total11"></label></td>
+                    <td id="product12"><img src="cleanSpaceShipping.png" alt="Shipping container" /><br /><p>Shipping Container</p><label id="Product12inv"></label><p>$5.99</p><input type="number" id="Product12qty" name="Product12qty" value="0" onblur="price12()" /><br /><label id="total12"></label></td>
+                </tr>
+            </table>
+            <button type="reset">clear</button><button type="submit" name="btnTotal">total</button><br />
+           
+        </form>
+       
+    </article>
+</body>
+</html>
