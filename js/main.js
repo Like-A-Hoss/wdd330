@@ -11,7 +11,11 @@ const links = [
     {
         label: "Week 3 Notes",
         url: "../week3/index.html"
-    }
+    },
+    {
+        label: "Week 4 Notes",
+        url: "../week4/index.html"
+    },
 ];
 let message = " ";
 for (text in links){
