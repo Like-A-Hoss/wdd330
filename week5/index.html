@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../StyleSheet.css">
+    <title>Week 5 index</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>WDD 340 Assignments of Nathan Hoskins</h1>
+        <p>A portfollio of work made for class.</p>
+        </header>
+        <nav>
+            <p>Assignments</p>
+            <ol style="text-align: center; list-style-position: inside;" id="navList">
+                
+            </ol>
+        </nav>
+
+        <article>
+            <h2>Reading Notes, Dealing with Oops</h2>
+            <p>
+            Oops happens.  It happens a lot.  There are 3 main kinds of oops.<br>
+            <ul>
+                <li>System Error - The hardware oopsed</li>
+                <li>Programmer Error - I oopsed.  Probably made a syntax error and the IDE didn't smack me hard enough in the face to catch it.</li>
+                <li>User Error - The user oopsed.  A good program prevents these as much as they can.  That said the ancient maxim is "nothing is fool proof, to the tallented or motivated enough fool."</li>
+            </ul></p>
+            <p>As a programmer I can't do much about hardware related oops.  There is littel to no control over that, and the best thing is to plan around that and to have the broadest
+            possible compatibility.  On the other hand "You and only You can prevent forest fires" is a similar mantra to understand that only we as programers can prevent our own code 
+            from being riddled with errors.</p>
+            <p>User error while as I stated above nothing is fool proof to the motivated or tallented enough fool, doesn't mean we shouldn't do our best to eliminate as much foolishness 
+            out of the gate as we can.  Building validation scripts to make sure that everything is filled out correctly, testing things before sending them to the back end.  
+            Ultimately we can trap user error before it becomes a problem and can fowl everything up.  In addition to things like error traps we can use tricks like setting input box properties
+             to match our desired input, so that the user can't enter words were we expect numbers as an example.</p>
+            <h2>Exceptions</h2>
+            <p>
+            An exception is when an error returns something useful, a system message you can use to hunt down the error and exterminate it.  Often times they will create a 
+            stack trace this is a note telling you where things went pear shapped and sideways, sometimes how.  These are useful!
+            </p>
+            <h2>Warnings</h2>
+            <P>A warning happens when what ever the error was, it wasn't enough to crash the program just annoy it.  
+            </P>
+            <h2>Testing and Debugging</h2>
+            <p>FIND them, Hunt them down, Squash them.  Aku Soku Zan or "Slay Evil Immediately", and buggy code is evil!  Run several tests, make sure that things work, try 
+                multiple data sets where you know what the result should be to make sure everything works as it is supposed to.
+            </p>
+            <p>
+                Run tests in strict mode!  Yes strict mode makes more errors.  That's what you want to root out each and ever last little evil and kill it before the users get 
+                there hands on it.  
+            </p>
+            <h3>
+                Methods of bug killing
+            </h3>
+            <p>You can be sure that there is a good chance someone is trying to run your stuff on a coal powered PC, or their toaster, or an Iphone 4, and there is probably someone 
+                out there who will try to run your website on a crystal ball.  Then again you may also have someone who is trying to look at your site with a VR headest and a high end 
+            pc.  One of the good things you can do is feature detection when and where possible, because technology changes more often than underwear.  So as often as you want to use 
+            so cool new feature like Holodeck, remember that not everyone is going to be able to use that so plan a basic version of your page for them.
+        </p>
+        <p>It shouldn't need to be said but running the code in a few browsers to see what happens is a good thing, and a great way to detect issues.  Right click inspect, set breaks 
+            all the stuff that was taught in web engineering.  Also setting error traps!  Do it, just Do it!  Don't let your code die!  
+        </p>
+
+            <h2>Scrum Questions</h2>
+            <ol>
+                <li>What did I do since the last meeting?</li>
+                <ul>
+                    <li>Started planning final projects</li>
+                </ul>
+                <li>What am I going to do next?</li>
+                <ul>
+                    <li>finish to do.</li>
+                    <li>Start database development</li>
+                    <li>Keep my Shop going!</li>
+                    <li>Continue to study web front and back end at the same time and try to keep the classes seperate</li>
+                </ul>
+                <li>What are my Blockers?</li>
+                <ul>
+                    <li>Work</li>
+                    <li>Stress</li>
+                    <li>Insanity?</li>
+                </ul>
+            </ol>
+        </article>
+
+        <footer id="footer"></footer>
+        <script src="../js/main.js"></script>
+    </body>
