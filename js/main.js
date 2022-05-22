@@ -2,23 +2,23 @@
 const links = [
     {
         label: "Week1 Notes",
-        url: "../week1/index.html"
+        url: "../wdd330/week1/index.html"
     },
     {
         label: "Week2 Notes",
-        url: "../week2/index.html"
+        url: "../wdd330/week2/index.html"
     },
     {
         label: "Week 3 Notes",
-        url: "../week3/index.html"
+        url: "../wdd330/week3/index.html"
     },
     {
         label: "Week 4 Notes",
-        url: "../week4/index.html"
+        url: "../wdd330/week4/index.html"
     },
     {
         label: "Week 5 Notes",
-        url: "../week5/index.html"
+        url: "../wdd330/week5/index.html"
     }
 ];
 let message = " ";
