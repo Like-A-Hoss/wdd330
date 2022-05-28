@@ -23,11 +23,13 @@
         <article>
             <script src="../js/todo/addtask.js"></script>
             <script src="../js/todo/printtasks.js"></script>
+            <script src="../js/todo/completetask.js"></script>
+            <script src="../js/todo/removetask.js"></script>
             <p id="test_output"></p>
             <!-- <button onclick="addTask()">run me</button> -->
             
                 <h1>TODO</h1>
-                <form id="toDoApp">
+                <form id="toDoApp" onload="printTasks()">
 
                 <input id="addTask" maxlength="145"><button onclick="addTask()"><img src="../img/plus_icon.png"></button>
             </form>
