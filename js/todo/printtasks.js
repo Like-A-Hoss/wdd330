@@ -1,3 +1,4 @@
+function printTasks(){
     let toDoList = localStorage.getItem("toDoList");
     let output = " "
     for(task in toDoList ){
@@ -7,4 +8,4 @@
         output += "<label class = '' id='item_"+ id+"'>" +item+"</label>";
         output += "<button class = 'deleteButton' onClick='removeTask()' value='"+id+"'> X</button>";
     }
-
+}

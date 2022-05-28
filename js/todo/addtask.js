@@ -14,8 +14,6 @@ function addTask(){
     //document.getElementById("test_output").innerHTML = timestamp;
     var todo = {id : timestamp, content: item, completed:false};
     if (localStorage.toDoList){
-
-    
     localStorage.toDoList.append(todo);
     } else{
         localStorage.toDoList = new Array;
