@@ -19,6 +19,10 @@ const links = [
     {
         label: "Week 5 Notes",
         url: "../wdd330/week5/index.html"
+    },
+    {
+        label: "Todo App",
+        url: "../wdd330/todo/index.html"
     }
 ];
 let message = " ";
