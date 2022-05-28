@@ -1,0 +1,13 @@
+.completeButton {
+    background-color: white;
+    border: radius 5px; 
+    border-color:black;
+    font-weight: bolder;
+}
+.deleteButton{
+    color: red;
+    font-weight: bolder;
+}
+.done{
+    text-decoration: line-through ;
+}
