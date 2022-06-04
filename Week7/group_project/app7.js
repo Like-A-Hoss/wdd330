@@ -4,5 +4,3 @@ const myHikes = new Hikes('hikes');
 window.addEventListener('load', () => {
   myHikes.showHikeList();
 });
-© 2022 GitHub, Inc.
-Term
