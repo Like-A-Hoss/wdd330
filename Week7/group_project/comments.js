@@ -100,5 +100,5 @@ class comments{
         }
       }
       
-      export default Comments;
+   
 
