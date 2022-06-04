@@ -53,7 +53,7 @@ function renderCommentList(element, comments){
         element.appendChild(item);
     });
 }
-class comments{
+class Comments{
     constructor(type, commentElementID){
         this.type = type;
         this.commentElementID = commentElementID;
