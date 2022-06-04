@@ -61,6 +61,8 @@ class HikesView {
                 <h3>How to get there</h3>
                 <p>${hike.directions}</p>
             </div>
+            <div>
+                <lable for='${hike.vlaue}Comment'></lable><input type='textarea' id='${hike.value}Comment'> <button type='button' onclick='addComment()'>add comment</button>
         
         `;
     parent.innerHTML = '';
