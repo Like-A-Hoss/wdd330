@@ -100,5 +100,6 @@ class Comments{
         }
       }
       
-   
+
+   export default Comments;
 
