@@ -20,21 +20,48 @@
         </nav>
 
         <article>
+            <h2>Notes</h2>
+            <p>
+                Keep this info handy all functions have a basic set of properties.  <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/11/k01nwuyz/">Refer back to chapter 11 often you will need it.  </a>
+                <script>
+                    function sayHello(greeting='Hello'){
+    return `${ greeting }, my name is ${ this.name }`;
+}
+
+sayHello.call(clark, 'How do you do');
+
+
+sayHello.call(bruce);
+
+                </script>
+            </p>
+            <h3>Ajax,</h3> <p>Ajax is very useful it allows for asyncronus communication between two server.  You can't really ask for better.  Very sueful!</p>
+            <script>const url = 'https:example.com/data';
+
+fetch(url)
+.then( response => response.text() ) // transforms the text stream into a JavaScript string
+.then( text => console.log(text) )
+.catch( error => console.log('There was an error: ', error));
+</script>
             <h2>Group Project</h2>
             I did the driving for the group project this week.  <a href="/week7/group_project/hiking-complete.html">Here</a> it is.
             <h2>Scrum Questions</h2>
             <ol>
                 <li>What did I do since the last meeting?</li>
                 <ul>
-                    <li></li>
+                    <li>updated project for CIT225</li>
+                    <li>prepared database</li>
+                    <li>recovered from database failure</li>
                 </ul>
                 <li>What am I going to do next?</li>
                 <ul>
-                    <li></li>
+                    <li>get help for burnout</li>
                 </ul>
                 <li>What are my Blockers?</li>
                 <ul>
-                    <li></li>
+                    <li>Experianced burnout</li>
+                    <li>Struggled to move forward</li>
+                    <li>Experianced headaches just looking at computer screens</li>
                 </ul>
             </ol>
         </article>
