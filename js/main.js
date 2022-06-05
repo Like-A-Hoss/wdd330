@@ -26,7 +26,7 @@ const links = [
     },
     {
         label: "Week 7 Notes",
-        url: "../wdd330/week7/index.html"
+        url: "../wdd330/Week7/index.html"
     }
 ];
 let message = " ";
