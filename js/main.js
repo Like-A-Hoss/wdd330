@@ -36,7 +36,7 @@ for (text in links){
 }
 document.getElementById('navList').innerHTML = message;
 
-const header_Generator = " <h1>WDD 340 Assignments of Nathan Hoskins</h1> <p>A portfollio of work made for class.</p> "
+const header_Generator = " <h1>WDD 330 Assignments of Nathan Hoskins</h1> <p>A portfollio of work made for class.</p> "
 document.getElementById('header').innerHTML = header_Generator;
 
 const footer_generator = "<p>Copyright 2022 Nathan S. Hoskins.  Done for academic credit with Brigham Young University - Idaho, Online <br /> All rights reserved.  Images used are sourced from google and used in accordance to US Free Use Doctrine, Academic Calause.</P>"
