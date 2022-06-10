@@ -2,35 +2,35 @@
 const links = [
     {
         label: "Week1 Notes",
-        url: "../wdd330/week1/index.html"
+        url: "./wdd330/week1/index.html"
     },
     {
         label: "Week2 Notes",
-        url: "../wdd330/week2/index.html"
+        url: "./wdd330/week2/index.html"
     },
     {
         label: "Week 3 Notes",
-        url: "../wdd330/week3/index.html"
+        url: "./wdd330/week3/index.html"
     },
     {
         label: "Week 4 Notes",
-        url: "../wdd330/week4/index.html"
+        url: "./wdd330/week4/index.html"
     },
     {
         label: "Week 5 Notes",
-        url: "../wdd330/week5/index.html"
+        url: "./wdd330/week5/index.html"
     },
     {
         label: "Todo App",
-        url: "../wdd330/todo/index.html"
+        url: "./wdd330/todo/index.html"
     },
     {
         label: "Week 7 Notes",
-        url: "../wdd330/Week7/index.html"
+        url: "./wdd330/Week7/index.html"
     },
     {
         label: "Week 8 Notes",
-        url: "../wdd330/week8/index.html"
+        url: "./wdd330/week8/index.html"
     }
 ];
 let message = " ";
