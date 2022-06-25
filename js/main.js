@@ -35,7 +35,11 @@ const links = [
     {
         label: "Week 9 Notes",
         url: "./wdd330/week9/index.html"
-    }
+    },
+    {
+    label: "Week 10 Notes",
+    url: "./wdd330/week10/index.html"
+}
 ];
 let message = " ";
 for (text in links){
