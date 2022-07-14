@@ -1,4 +1,4 @@
-import Connection from "./dnd-model";
+
 
 export default class Attributes_view{
     render_attribute(attribute_data, attribute_name){

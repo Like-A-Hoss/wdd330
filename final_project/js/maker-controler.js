@@ -1,5 +1,6 @@
-import Attributes_view from "./attributes-view";
-import Connection from "./dnd-model";
+import Connection from "../js/dnd-model.js";
+import Attributes_view from '../js/attributes-view.js';
+
 
 export default class Maker_controler{
     constructor(parent){
