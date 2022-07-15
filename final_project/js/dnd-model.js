@@ -1,4 +1,4 @@
-import { getJSON } from "./utilities";
+import { getJSON } from "../js/utilities.js";
 
 /*building model*/
 export default class Connection{
