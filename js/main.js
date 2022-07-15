@@ -39,7 +39,11 @@ const links = [
     {
     label: "Week 10 Notes",
     url: "./wdd330/week10/index.html"
-}
+    },
+    {
+        label: "Final Project",
+        url: "./wdd330/final_project/index.html"
+    }
 ];
 let message = " ";
 for (text in links){
