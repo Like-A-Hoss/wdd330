@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../StyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="../final_project/css/tooltip.css">
     <title>DND Character Maker</title>
     </head>
     
@@ -18,17 +19,40 @@
         </nav>
 
         <article>
-           <div id>
+            <div id="identity">
+                <label for="name"><div class="tooltip">Name: <span class="tooltiptext">A name for the character</span></div></label><input required id="name"> <label for="player"><div class="tooltip">Player name:<span class="tooltiptext">Your Name</span></div></label><input required id="player"><br>
+                <label for="race"><div class="tooltip" >Race: <span class="tooltiptext">The species to which your character bleongs, please choose from the list"</span></div></label><select required >
+                    <option> Please Select </option>
+                    <option value="human">Human</option>
+                    <option value="dragonborn">Dragonborn</option> 
+                    <option value="elf">Elf</option>
+                    <option value="dwarf">Dwarf</option>
+                    <option value="gnome">Gnome</option>
+                    <option value="halfling">Halfling</option>
+                    <option value="half-elf">Half Elf</option>
+                    <option value="half-orc">Half Orc</option>
+                    <option value="Tiefling">Tiefling</option>
+                </select>
+                
+
+            </div>
+           
             <h2>Attribues</h2>
+            <div id="attributes">
             <form>
             <label for="str" id="str_lbl"></label><select id="str" required><option> - </option><option value="15">15</option><option value="14">14</option><option value="13">13</option><option value="12">12</option><option value="10">10</option><option value="8">8</option></select>
             <label for="dex" id="dex_lbl"></label><select id="dex" required><option> - </option><option value="15">15</option><option value="14">14</option><option value="13">13</option><option value="12">12</option><option value="10">10</option><option value="8">8</option></select>
             <label for="con" id="con_lbl"></label><select id="con" required><option> - </option><option value="15">15</option><option value="14">14</option><option value="13">13</option><option value="12">12</option><option value="10">10</option><option value="8">8</option></select>
             <label for="int" id="int_lbl"></label><select id="int" required><option> - </option><option value="15">15</option><option value="14">14</option><option value="13">13</option><option value="12">12</option><option value="10">10</option><option value="8">8</option></select>
             <label for="wis" id="wis_lbl"></label><select id="wis" required><option> - </option><option value="15">15</option><option value="14">14</option><option value="13">13</option><option value="12">12</option><option value="10">10</option><option value="8">8</option></select>
-            <label for="cha" id="cha_lbl"></label><select id="cha" required><option> - </option><option value="15">15</option><option value="14">14</option><option value="13">13</option><option value="12">12</option><option value="10">10</option><option value="8">8</option></select>
-            </form>   
+            <label for="cha" id="cha_lbl"></label><select id="cha" required><option> - </option><option value="15">15</option><option value="14">14</option><option value="13">13</option><option value="12">12</option><option value="10">10</option><option value="8">8</option></select><br>
+            <button>save</button>
+            </form>
+
             </div>
+            <h2>
+                skills
+            </h2>
         </article>
 
         <footer id="footer"></footer>
