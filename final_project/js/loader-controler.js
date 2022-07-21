@@ -11,6 +11,43 @@ export default class Loader_Controler{
         this.cha = localStorage.getItem('cha');
     }
     load_character(){
+        switch(this.race){
+            case "dragonborn":
+                this.str += 2
+                this.cha += 1
+                break;
+            case "dwarf":
+                this.con += 2
+                this.str += 2
+                break;
+            case "elf":
+                this.dex += 2
+                this.int += 1
+                break;
+            case "halfing":
+                this.dex += 2
+                this.cha += 1
+                break;
+            case "human":
+                this.con += 1
+                this.str += 1
+                this.cha += 1
+                break;
+            case "gnome":
+                this.int += 2
+                this.con += 1
+                break;
+            case "half-elf":
+                this.cha += 2
+                this.dex += 1
+                this.wis += 1
+                break;
+            case "half-orc":
+                this.str += 2
+                this.con += 1
+                break;
+        }
+        
         document.getElementById('name').innerHTML = this.name;
         document.getElementById('player').innerHTML = this.player;
         document.getElementById('race').innerHTML = this.race;
