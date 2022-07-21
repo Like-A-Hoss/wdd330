@@ -3,12 +3,12 @@ export default class Loader_Controler{
         this.name = localStorage.getItem('name');
         this.player = localStorage.getItem('player');
         this.race = localStorage.getItem('race');
-        this.str = localStorage.getItem('str');
-        this.dex = localStorage.getItem('dex');
-        this.con = localStorage.getItem('con');
-        this.int = localStorage.getItem('int');
-        this.wis = localStorage.getItem('win');
-        this.cha = localStorage.getItem('cha');
+        this.str = parseInt(localStorage.getItem('str'));
+        this.dex = parseInt(localStorage.getItem('dex'));
+        this.con = parseInt(localStorage.getItem('con'));
+        this.int = parseInt(localStorage.getItem('int'));
+        this.wis = parseInt(localStorage.getItem('win'));
+        this.cha = parseInt(localStorage.getItem('cha'));
     }
     load_character(){
         switch(this.race){
@@ -47,8 +47,9 @@ export default class Loader_Controler{
                 this.con += 1
                 break;
         }
-        
+
         document.getElementById('name').innerHTML = this.name;
+        console.log(race);
         document.getElementById('player').innerHTML = this.player;
         document.getElementById('race').innerHTML = this.race;
         document.getElementById('str').innerHTML = this.str;
